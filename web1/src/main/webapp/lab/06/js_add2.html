@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>덧셈2</title>
+   <script>
+      function adder()
+      {
+         let x = document.getElementById("x").value;
+         let y = document.getElementById("y").value;
+         let sum = parseInt(x)+parseInt(y);
+         document.getElementById("sum").value = sum;
+      }
+   </script>
+</head>
+<body>
+<h3>덧셈 계산기 </h3>
+   <form>
+      첫 번째 정수 : <input type="text" id ="x"><br>
+      두 번째 정수 : <input type="text" id ="y"><br>   
+      두 정수의 합 : <input type="text" id ="sum"><br>
+      <input type="button" value="계산" onclick = "adder()">
+      <input type="reset" value="지움" >
+      
+   </form>
+</body>
+</html>

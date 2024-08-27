@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+body { background-color: yellow; }
+h1 { color: red; }
+p.first { color: green; }
+p.second { color: blue; }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+div {
+	display : inline-block;
+	width : 60px;
+	padding : 10px;
+}
+</style>
+</head>
+<body>
+<h3>CSS 색 이름</h3>
+<HR>
+<script>
+let colorNames=["maroon", "red", "orange", "yellow", "olive", "purple" , "fuchsia",
+		"white", "lime", "green", "navy" , "blue", "aqua", "teal", "black", "silver", "gray"
+		]
+		
+		for(let i=0; i<colorNames.length; i++){
+			let str = "<div style='background-color:";
+			str += colorNames[i];
+			str += "'>" + colorNames[i] + "</div>";
+			document.write(str);
+		}
+</script>
+
+
+
+</body>
+</html>
+

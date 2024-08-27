@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+div {
+	display : inline-block;
+	width : 120px;
+	padding : 10px;
+}
+    </style>
+</head>
+<body>
+   <script>
+      for(let i = 0; i<4;i++){
+         for(let j = 0; j<4; j++){
+            let r = Math.floor(Math.random()*256);
+            let g = Math.floor(Math.random()*256);
+            let b = Math.floor(Math.random()*256);
+            document.write(`<div style="background-color:rgb(${r},${g},${b})">rgb(${r},${g},${b})</div>`);
+         }
+       
+      }   
+   </script>
+</body>
+</html>

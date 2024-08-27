@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HW6-1</title>
+</head>
+<body>
+<script>
+	function fac(n) {
+		if (n == 1) 
+			return 1;
+		else 
+			return n * fac(n - 1);
+	}
+	
+	function calculateFactorial() {
+		var num = document.getElementById("number").value;
+		document.getElementById("result").innerHTML = "정수 " + num + "의 팩토리얼: " + fac(parseInt(num));
+	}
+</script>
+
+<h1>팩토리얼 계산</h1>
+<hr>
+<form>
+	정수를 입력하시오: <input type="text" id="number"><br>
+	<input type="button" name="btn" value="팩토리얼 계산" onclick="calculateFactorial()">
+</form>
+<br>
+<span id = "result"></span>
+
+</body>
+</html>

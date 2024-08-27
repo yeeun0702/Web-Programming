@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>난수</title>
+</head>
+<body>
+   <h3>난수 10개 생성</h3>
+   <hr>
+   <script>
+      let n = [];
+      //let n = new Array();
+
+      for (let i = 0; i < 10; i++) {
+         n[i] = Math.floor(Math.random() * 100) + 1;
+      }
+
+      document.write("난수 생성: ");
+      for (let i = 0; i < 10; i++) {
+         document.write(n[i] + " ");
+      }
+      
+      document.write("<hr>");
+      document.write("배열 정렬: ");
+      n.sort();   //문자열이라 배열 정렬이같은 x parseint()해서 하면 정렬됨
+      
+      for (let i = 0; i < 10; i++) {
+         document.write(n[i] + " ");
+      }
+      
+      document.write("<hr>");
+      let max = n[0];
+      for (let i = 0; i < 10; i++) {
+         if(n[i] > max)
+            max = n[i];
+      }
+      document.write("최댓값: " + max);
+   </script>
+
+</body>
+</html>

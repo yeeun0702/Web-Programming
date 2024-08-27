@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>숫자 추측 게임</title>
+</head>
+<body>
+   <h1>숫자 추측 게임</h1>
+   <hr>
+   <div>1부터 100 사이의 값을 추측해 보세요.</div>
+   <div>시작 버튼을 누르면 게임이 시작합니다.</div>
+   <input type="button" id="startbtn" onclick="start()" value="시작"><br>
+      숫자: <input type="number" id=input_num>
+   <input type="submit" id="submit_btn" value="확인" onclick="road()"></input><br>
+   힌트 <input type="text" id="hint"><br>
+   횟수 <input type="text" id=count><br>
+   
+   <script>
+      let count = 0;
+      let num = start();
+      function start(){
+         let num = Math.floor(Math.random()*100)+1;
+         return num;
+      }
+      console.log(num);
+      function road(){
+         while(true){
+            let input_num = document.getElementById("input_num").value;
+            console.log(input_num);
+            let count_btn = document.getElementById("count");
+            let hint_btn = document.getElementById("hint");
+            if(input_num>=1&& input_num<=100){
+               if(input_num == num){
+                  hint_btn.value = "정답입니다.";
+                  count_btn.value = count;
+                  break;
+               }
+               else if(input_num < num){
+                  hint_btn.value = "낮습니다.";
+                  count++;
+                  return;
+               }
+               else if(input_num > num){
+                  hint_btn.value = "높습니다.";
+                  count++;
+                  return ;
+               }
+               return ;
+            }   
+         }
+         
+         
+         
+         
+      }
+   </script>
+</body>
+</html>
