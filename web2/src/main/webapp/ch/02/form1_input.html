@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input</title>
+</head>
+<body>
+	<form name="loginform" method="get" action="/web2/FormInputServlet" encType="UTF-8">
+		<table>
+			<tr>
+				<td align=right>계정:&nbsp;</td>
+				<td><input type="text" name="user_id"></td>
+			</tr>
+			<tr>
+				<td align=right>암호:&nbsp;</td>
+				<td><input type="password" name="user_pw"></td>
+			</tr>
+			<tr>
+				<td align=right>메일:&nbsp;</td>
+				<td><input type="email" name="user_email" placeholder="id@host"></td>
+			</tr>			
+			<tr>
+				<td colspan=2>
+					<input type="submit" value="로그인">
+					<input type="reset" value="재입력">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>checkbox</title>
+	<style>
+		div {
+			font-size: 1.2em;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form action="/web2/FormCheckboxServlet">
+		<div>개발 가능 언어</div>
+		<!-- <lable> 태그 사용 -->
+		<label>
+			<input type="checkbox" name="lang" value="1">Python</input>
+		</label><br>
+		<label>
+			<input type="checkbox" name="lang" value="2">C/C++</input>
+		</label><br>
+		<label>
+			<input type="checkbox" name="lang" value="3">Java</input>
+		</label><br>
+		<label>
+			<input type="checkbox" name="lang" value="4">Javascript</input>
+		</label><br><br>
+		
+		<input type="submit" value="확인">
+		<input type="reset" value="취소">
+	</form>
+</body>
+</html>
+
